@@ -100,7 +100,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: aumo-release-signed-v${{ steps.version.outputs.app_version }}
-          path: mobile/aumo-release-signed.apk
+          path: aumo-release-signed.apk
           if-no-files-found: error
           retention-days: 3
 
@@ -110,7 +110,7 @@ jobs:
           tag_name: v${{ steps.version.outputs.app_version }}
           name: Aumo Release v${{ steps.version.outputs.app_version }}
           body: "Rilisan otomatis build ke-${{ github.run_number }}."
-          files: mobile/aumo-release-signed.apk
+          files: aumo-release-signed.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
