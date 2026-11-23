@@ -9,9 +9,9 @@ import com.aumofinance.app.reports.financials.closingjournal.ClosingJournalActiv
 import com.aumofinance.app.reports.financials.financialposition.FinancialPositionActivity
 import com.aumofinance.app.reports.financials.incomestatement.IncomeStatementActivity
 import com.aumofinance.app.reports.financials.retainedearnings.RetainedEarningsActivity
-import com.aumofinance.app.reports.journal.AdjustingJournalReportActivity
-import com.aumofinance.app.reports.ledger.permanent.GeneralLedgerPermanentActivity
-import com.aumofinance.app.reports.ledger.temporary.GeneralLedgerTemporaryActivity
+import com.aumofinance.app.reports.journals.AdjustingJournalReportActivity
+import com.aumofinance.app.reports.ledgers.permanent.GeneralLedgerPermanentActivity
+import com.aumofinance.app.reports.ledgers.temporary.GeneralLedgerTemporaryActivity
 import com.aumofinance.app.reports.trialbalances.adjusted.AdjustedTrialBalanceActivity
 import com.aumofinance.app.reports.trialbalances.postclosing.PostClosingTrialBalanceActivity
 import com.aumofinance.app.reports.trialbalances.unadjusted.TrialBalancesActivity
@@ -37,7 +37,7 @@ class ReportsMenuActivity : ComponentActivity() {
     private fun buildSections(): List<ReportMenuSection> =
         listOf(
             ReportMenuSection(
-                title = "General Ledger",
+                title = "General Ledgers",
                 items =
                     listOf(
                         ReportMenuItem("General Ledger — Permanent", ReportMenuIcons.LedgerPermanent) {
@@ -49,7 +49,7 @@ class ReportsMenuActivity : ComponentActivity() {
                     ),
             ),
             ReportMenuSection(
-                title = "Trial Balance & Adjustments",
+                title = "Trial Balances & Adjustments",
                 items =
                     listOf(
                         ReportMenuItem("Trial Balance", ReportMenuIcons.TrialBalances) {

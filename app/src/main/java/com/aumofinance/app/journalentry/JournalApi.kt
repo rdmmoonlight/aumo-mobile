@@ -1,8 +1,7 @@
-package com.aumofinance.app.journal
+package com.aumofinance.app.journalentry
 
 import com.aumofinance.app.network.ApiClient
 import io.ktor.client.HttpClient
-import io.ktor.client.request.delete
 import io.ktor.client.request.get
 import io.ktor.client.request.parameter
 import io.ktor.client.request.post
@@ -26,14 +25,14 @@ data class JournalLine(
 data class CreateJournalEntryRequest(
     val journalType: String,
     val entryDate: String,
-    val createdAt: String, // waktu lokal perangkat saat input, wajib Kind Unspecified
+    val createdAt: String,
     val lines: List<JournalLine>,
 )
 
 data class UpdateJournalEntryRequest(
     val journalType: String,
     val entryDate: String,
-    val updatedAt: String, // waktu lokal perangkat saat edit disimpan
+    val updatedAt: String,
     val lines: List<JournalLine>,
 )
 
@@ -83,8 +82,6 @@ class JournalApi(private val client: HttpClient = ApiClient.client) {
             contentType(ContentType.Application.Json)
             setBody(request)
         }
-
-    suspend fun delete(id: Int): HttpResponse = client.delete("/api/v1/journal-entry/delete/$id")
 
     suspend fun searchDescriptions(query: String): HttpResponse =
         client.get("/api/v1/journal-entry/search-descriptions") {

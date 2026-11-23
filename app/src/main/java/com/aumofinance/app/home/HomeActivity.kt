@@ -13,10 +13,10 @@ import androidx.lifecycle.lifecycleScope
 import com.aumofinance.app.coa.CoaActivity
 import com.aumofinance.app.dashboard.DashboardActivity
 import com.aumofinance.app.data.DbConnectionManager
-import com.aumofinance.app.journal.JournalEntryActivity
+import com.aumofinance.app.journalentry.JournalEntryActivity
 import com.aumofinance.app.network.ApiClient
 import com.aumofinance.app.periods.PeriodsActivity
-import com.aumofinance.app.reports.journal.GeneralJournalReportActivity
+import com.aumofinance.app.reports.journals.GeneralJournalReportActivity
 import com.aumofinance.app.reports.menu.ReportsMenuActivity
 import com.aumofinance.app.settings.SettingsActivity
 import com.aumofinance.app.ui.theme.AumoTheme

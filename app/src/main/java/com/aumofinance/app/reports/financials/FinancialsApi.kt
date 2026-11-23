@@ -48,7 +48,7 @@ data class FinancialPositionReport(
     val totalAssets: Double,
     val liabilityAccounts: List<FinancialPositionLine>,
     val totalLiabilities: Double,
-    val equityAccounts: List<FinancialPositionLine>, // sudah termasuk baris "Retained Earnings" di akhir
+    val equityAccounts: List<FinancialPositionLine>,
     val totalEquity: Double,
     val totalLiabilitiesAndEquity: Double,
     val isBalanced: Boolean,

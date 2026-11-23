@@ -1,4 +1,4 @@
-package com.aumofinance.app.journal
+package com.aumofinance.app.journalentry
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

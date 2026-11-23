@@ -1,10 +1,10 @@
-package com.aumofinance.app.reports.ledger.temporary
+package com.aumofinance.app.reports.ledgers.temporary
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
-import com.aumofinance.app.reports.ledger.LedgerScreen
+import com.aumofinance.app.reports.ledgers.LedgerScreen
 import com.aumofinance.app.ui.theme.AumoTheme
 
 class GeneralLedgerTemporaryActivity : ComponentActivity() {

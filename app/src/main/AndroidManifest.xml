@@ -39,22 +39,22 @@
             android:name=".coa.CoaActivity"
             android:exported="false" />
         <activity
-            android:name=".journal.JournalEntryActivity"
+            android:name=".journalentry.JournalEntryActivity"
             android:exported="false" />
         <activity
-            android:name=".reports.journal.GeneralJournalReportActivity"
+            android:name=".reports.journals.GeneralJournalReportActivity"
             android:exported="false" />
         <activity
             android:name=".reports.menu.ReportsMenuActivity"
             android:exported="false" />
         <activity
-            android:name=".reports.journal.AdjustingJournalReportActivity"
+            android:name=".reports.journals.AdjustingJournalReportActivity"
             android:exported="false" />
         <activity
-            android:name=".reports.ledger.permanent.GeneralLedgerPermanentActivity"
+            android:name=".reports.ledgers.permanent.GeneralLedgerPermanentActivity"
             android:exported="false" />
         <activity
-            android:name=".reports.ledger.temporary.GeneralLedgerTemporaryActivity"
+            android:name=".reports.ledgers.temporary.GeneralLedgerTemporaryActivity"
             android:exported="false" />
         <activity
             android:name=".reports.trialbalances.unadjusted.TrialBalancesActivity"

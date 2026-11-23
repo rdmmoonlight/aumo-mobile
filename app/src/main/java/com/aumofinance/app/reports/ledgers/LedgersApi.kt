@@ -1,4 +1,4 @@
-package com.aumofinance.app.reports.ledger
+package com.aumofinance.app.reports.ledgers
 
 import com.aumofinance.app.network.ApiClient
 import io.ktor.client.HttpClient
@@ -34,7 +34,7 @@ data class LedgerResponse(
     val hasPeriodSelected: Boolean,
     val selectedPeriodName: String?,
     val isTemporary: Boolean,
-    val netIncomeBeforeClosing: Double?, // hanya dikirim endpoint temporary
+    val netIncomeBeforeClosing: Double?,
     val accounts: List<LedgerAccount>?,
 )
 
@@ -45,7 +45,7 @@ sealed interface LedgerResult {
     data class Failure(val message: String) : LedgerResult
 }
 
-class LedgerApi(private val client: HttpClient = ApiClient.client) {
+class LedgersApi(private val client: HttpClient = ApiClient.client) {
     // Route backend memakai bentuk JAMAK: /reports/general-ledgers/...
     // Hanya GET. Backend yang mengisi data staging sendiri bila belum ada.
     suspend fun getLedger(isTemporary: Boolean): HttpResponse =
@@ -69,7 +69,7 @@ class LedgerApi(private val client: HttpClient = ApiClient.client) {
                 else -> LedgerResult.Success(body)
             }
         } catch (t: Throwable) {
-            com.aumofinance.app.crashlog.AppLogger.error("LedgerApi", "Error tertangkap", t)
+            com.aumofinance.app.crashlog.AppLogger.error("LedgersApi", "Error tertangkap", t)
             LedgerResult.Failure("Tidak dapat terhubung ke server.")
         }
 }

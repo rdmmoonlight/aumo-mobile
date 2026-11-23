@@ -1,8 +1,6 @@
-package com.aumofinance.app.reports.journal
+package com.aumofinance.app.reports.journals
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
@@ -11,7 +9,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -22,12 +19,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.aumofinance.app.core.CurrencyFormatter
-import com.aumofinance.app.ui.icons.TablerIcon
-import com.aumofinance.app.ui.icons.TablerIcons
 import com.aumofinance.app.ui.theme.AumoColors
 import com.aumofinance.app.ui.theme.AumoDimens
 import java.text.SimpleDateFormat
@@ -43,22 +37,15 @@ private val displayDateFormat = SimpleDateFormat("dd MMMM yyyy", Locale("in", "I
 private val displayTimestampFormat = SimpleDateFormat("dd/MM HH:mm", Locale("in", "ID"))
 
 /**
- * Halaman General/Adjusting Journal.
- * Dipakai bersama oleh GeneralJournalReportActivity (showToggle=true,
- * showActions dikontrol toggle Edit/Selesai) dan AdjustingJournalReportActivity
- * (showToggle=false, showActions selalu true). Ikon pensil/trash memakai
- * TablerIcon.
+ * Halaman General/Adjusting Journal (hanya tampilan baca; tanpa edit/hapus).
+ * Dipakai bersama oleh GeneralJournalReportActivity dan
+ * AdjustingJournalReportActivity.
  */
 @Composable
 fun JournalReportScreen(
     entries: List<JournalReportEntry>,
     selectedPeriodName: String?,
     defaultPeriodLabel: String,
-    showToggle: Boolean,
-    showActions: Boolean,
-    onToggleShowActions: (Boolean) -> Unit,
-    onEdit: (JournalReportEntry) -> Unit,
-    onDeleteRequest: (JournalReportEntry) -> Unit,
 ) {
     Scaffold(containerColor = AumoColors.Background) { innerPadding ->
         Column(
@@ -68,38 +55,12 @@ fun JournalReportScreen(
                     .padding(innerPadding)
                     .padding(AumoDimens.SpacingLarge),
         ) {
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.SpaceBetween,
+            Text(
+                text = "${selectedPeriodName ?: defaultPeriodLabel} \u00B7 Nominal dalam Rupiah",
+                color = AumoColors.TextMuted,
+                fontSize = MaterialTheme.typography.bodyMedium.fontSize,
                 modifier = Modifier.fillMaxWidth(),
-            ) {
-                Text(
-                    text = "${selectedPeriodName ?: defaultPeriodLabel} \u00B7 Nominal dalam Rupiah",
-                    color = AumoColors.TextMuted,
-                    fontSize = MaterialTheme.typography.bodyMedium.fontSize,
-                    modifier = Modifier.weight(1f),
-                )
-                if (showToggle) {
-                    Row(
-                        verticalAlignment = Alignment.CenterVertically,
-                        modifier =
-                            Modifier
-                                .background(
-                                    if (showActions) AumoColors.Primary else AumoColors.SurfaceElevated,
-                                    RoundedCornerShape(8.dp),
-                                )
-                                .clickable { onToggleShowActions(!showActions) }
-                                .padding(AumoDimens.SpacingLarge, AumoDimens.SpacingSmall),
-                    ) {
-                        Text(
-                            text = if (showActions) "Selesai" else "Edit",
-                            color = Color.White,
-                            fontWeight = FontWeight.Bold,
-                            fontSize = MaterialTheme.typography.labelSmall.fontSize,
-                        )
-                    }
-                }
-            }
+            )
 
             val grouped =
                 remember(entries) {
@@ -121,12 +82,7 @@ fun JournalReportScreen(
                         )
                     }
                     items(entriesForDate, key = { it.id }) { entry ->
-                        EntryCard(
-                            entry = entry,
-                            showActions = showActions,
-                            onEdit = { onEdit(entry) },
-                            onDelete = { onDeleteRequest(entry) },
-                        )
+                        EntryCard(entry = entry)
                     }
                 }
             }
@@ -135,12 +91,7 @@ fun JournalReportScreen(
 }
 
 @Composable
-private fun EntryCard(
-    entry: JournalReportEntry,
-    showActions: Boolean,
-    onEdit: () -> Unit,
-    onDelete: () -> Unit,
-) {
+private fun EntryCard(entry: JournalReportEntry) {
     Column(
         modifier =
             Modifier
@@ -162,25 +113,6 @@ private fun EntryCard(
                 fontSize = MaterialTheme.typography.labelSmall.fontSize,
                 modifier = Modifier.padding(end = AumoDimens.SpacingSmall),
             )
-            if (showActions) {
-                // Ikon pensil/trash sengaja pakai clickable polos (bukan
-                // IconButton) supaya benar-benar compact — IconButton
-                // Material3 memaksa target sentuh minimum ~48dp yang bikin
-                // ikon terlihat besar.
-                TablerIcon(
-                    TablerIcons.Edit,
-                    tint = AumoColors.TextSecondary,
-                    size = 16.dp,
-                    modifier = Modifier.clickable(onClick = onEdit),
-                )
-                Spacer(modifier = Modifier.width(AumoDimens.SpacingSmall))
-                TablerIcon(
-                    TablerIcons.Trash,
-                    tint = AumoColors.Bad,
-                    size = 16.dp,
-                    modifier = Modifier.clickable(onClick = onDelete),
-                )
-            }
         }
 
         Spacer(modifier = Modifier.height(AumoDimens.SpacingSmall))

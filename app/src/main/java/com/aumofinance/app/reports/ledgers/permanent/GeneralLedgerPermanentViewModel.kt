@@ -1,19 +1,18 @@
-package com.aumofinance.app.reports.ledger.temporary
+package com.aumofinance.app.reports.ledgers.permanent
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.aumofinance.app.reports.ledger.LedgerApi
-import com.aumofinance.app.reports.ledger.LedgerResponse
-import com.aumofinance.app.reports.ledger.LedgerResult
+import com.aumofinance.app.reports.ledgers.LedgersApi
+import com.aumofinance.app.reports.ledgers.LedgerResponse
+import com.aumofinance.app.reports.ledgers.LedgerResult
 import kotlinx.coroutines.launch
 
-// Akun Temporary (Laba Rugi): OperatingIncome, OperatingExpenses, OtherIncome,
-// OtherExpenses.
-class GeneralLedgerTemporaryViewModel : ViewModel() {
-    private val api = LedgerApi()
+// Akun Permanent (Neraca): Assets, Liabilities, Equity.
+class GeneralLedgerPermanentViewModel : ViewModel() {
+    private val api = LedgersApi()
 
     var report: LedgerResponse? by mutableStateOf(null)
         private set
@@ -28,7 +27,7 @@ class GeneralLedgerTemporaryViewModel : ViewModel() {
         if (isLoading) return
         viewModelScope.launch {
             isLoading = true
-            when (val result = api.load(isTemporary = true)) {
+            when (val result = api.load(isTemporary = false)) {
                 is LedgerResult.Success -> {
                     report = result.report
                     errorMessage = null

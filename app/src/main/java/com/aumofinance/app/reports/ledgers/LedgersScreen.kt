@@ -1,4 +1,4 @@
-package com.aumofinance.app.reports.ledger
+package com.aumofinance.app.reports.ledgers
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column

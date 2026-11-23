@@ -1,4 +1,4 @@
-package com.aumofinance.app.journal
+package com.aumofinance.app.journalentry
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
