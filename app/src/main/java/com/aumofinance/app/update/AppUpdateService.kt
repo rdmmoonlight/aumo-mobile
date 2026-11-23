@@ -22,7 +22,7 @@ import java.util.concurrent.atomic.AtomicBoolean
 object AppUpdateService {
     private const val TAG = "AppUpdateService"
     private const val GITHUB_USER = "rdmmoonlight"
-    private const val GITHUB_REPO = "aumo-finance"
+    private const val GITHUB_REPO = "aumo-mobile"
 
     const val PREFS_NAME = "aumo_update_prefs"
     const val KEY_AUTO_UPDATE_ENABLED = "auto_update_enabled"
