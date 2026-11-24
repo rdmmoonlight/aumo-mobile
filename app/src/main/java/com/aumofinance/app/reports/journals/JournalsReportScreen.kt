@@ -32,6 +32,9 @@ import java.util.Locale
 // nominal debit & kredit sengaja tidak sejajar.
 private const val CREDIT_INDENT = "        "
 
+// Label periode bawaan, satu untuk General maupun Adjusting Journal.
+private const val DEFAULT_PERIOD_LABEL = "Belum ada periode dipilih"
+
 private val inputDateTimeFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.US)
 private val displayDateFormat = SimpleDateFormat("dd MMMM yyyy", Locale("in", "ID"))
 private val displayTimestampFormat = SimpleDateFormat("dd/MM HH:mm", Locale("in", "ID"))
@@ -45,7 +48,6 @@ private val displayTimestampFormat = SimpleDateFormat("dd/MM HH:mm", Locale("in"
 fun JournalReportScreen(
     entries: List<JournalReportEntry>,
     selectedPeriodName: String?,
-    defaultPeriodLabel: String,
 ) {
     Scaffold(containerColor = AumoColors.Background) { innerPadding ->
         Column(
@@ -56,7 +58,7 @@ fun JournalReportScreen(
                     .padding(AumoDimens.SpacingLarge),
         ) {
             Text(
-                text = "${selectedPeriodName ?: defaultPeriodLabel} \u00B7 Nominal dalam Rupiah",
+                text = "${selectedPeriodName ?: DEFAULT_PERIOD_LABEL} \u00B7 Nominal dalam Rupiah",
                 color = AumoColors.TextMuted,
                 fontSize = MaterialTheme.typography.bodyMedium.fontSize,
                 modifier = Modifier.fillMaxWidth(),
