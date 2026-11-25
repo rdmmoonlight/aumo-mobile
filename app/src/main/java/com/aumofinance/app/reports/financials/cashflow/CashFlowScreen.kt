@@ -1,11 +1,11 @@
-package com.aumofinance.app.reports.financials.cashflow
+package com.aumomobile.app.reports.financials.cashflow
 
 import androidx.compose.runtime.Composable
-import com.aumofinance.app.reports.financials.CashFlowReport
-import com.aumofinance.app.reports.financials.FinancialReportScaffold
-import com.aumofinance.app.reports.financials.ReportDivider
-import com.aumofinance.app.reports.financials.ReportRow
-import com.aumofinance.app.reports.financials.ReportSectionTitle
+import com.aumomobile.app.reports.financials.CashFlowReport
+import com.aumomobile.app.reports.financials.FinancialReportScaffold
+import com.aumomobile.app.reports.financials.ReportDivider
+import com.aumomobile.app.reports.financials.ReportRow
+import com.aumomobile.app.reports.financials.ReportSectionTitle
 
 /** Laporan Arus Kas (Cash Flow). */
 @Composable

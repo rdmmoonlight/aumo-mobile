@@ -1,4 +1,4 @@
-package com.aumofinance.app.dashboard
+package com.aumomobile.app.dashboard
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -16,9 +16,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.aumofinance.app.core.CurrencyFormatter
-import com.aumofinance.app.ui.theme.AumoColors
-import com.aumofinance.app.ui.theme.AumoDimens
+import com.aumomobile.app.core.CurrencyFormatter
+import com.aumomobile.app.ui.theme.AumoColors
+import com.aumomobile.app.ui.theme.AumoDimens
 
 /** Ringkasan posisi keuangan periode berjalan. */
 @Composable

@@ -1,10 +1,10 @@
-package com.aumofinance.app.reports.financials.retainedearnings
+package com.aumomobile.app.reports.financials.retainedearnings
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
-import com.aumofinance.app.ui.theme.AumoTheme
+import com.aumomobile.app.ui.theme.AumoTheme
 
 class RetainedEarningsActivity : ComponentActivity() {
     private val viewModel: RetainedEarningsViewModel by viewModels()

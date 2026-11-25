@@ -1,9 +1,9 @@
-package com.aumofinance.app.network
+package com.aumomobile.app.network
 
 import android.content.Context
 import android.content.Intent
-import com.aumofinance.app.auth.LoginActivity
-import com.aumofinance.app.crashlog.AppLogger
+import com.aumomobile.app.auth.LoginActivity
+import com.aumomobile.app.crashlog.AppLogger
 import java.util.concurrent.CancellationException
 
 // Dilempar ApiClient saat server membalas 401 di endpoint yang butuh login.

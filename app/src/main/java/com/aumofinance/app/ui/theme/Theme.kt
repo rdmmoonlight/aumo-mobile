@@ -1,4 +1,4 @@
-package com.aumofinance.app.ui.theme
+package com.aumomobile.app.ui.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Typography
@@ -9,7 +9,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.aumofinance.app.R
+import com.aumomobile.app.R
 
 val AptosFontFamily =
     FontFamily(

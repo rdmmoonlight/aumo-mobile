@@ -1,4 +1,4 @@
-package com.aumofinance.app.ui.theme
+package com.aumomobile.app.ui.theme
 
 import androidx.compose.ui.unit.dp
 

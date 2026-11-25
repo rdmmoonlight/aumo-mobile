@@ -1,22 +1,22 @@
-package com.aumofinance.app.reports.menu
+package com.aumomobile.app.reports.menu
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.aumofinance.app.reports.financials.cashflow.CashFlowActivity
-import com.aumofinance.app.reports.financials.closingjournal.ClosingJournalActivity
-import com.aumofinance.app.reports.financials.financialposition.FinancialPositionActivity
-import com.aumofinance.app.reports.financials.incomestatement.IncomeStatementActivity
-import com.aumofinance.app.reports.financials.retainedearnings.RetainedEarningsActivity
-import com.aumofinance.app.reports.journals.AdjustingJournalReportActivity
-import com.aumofinance.app.reports.ledgers.permanent.GeneralLedgerPermanentActivity
-import com.aumofinance.app.reports.ledgers.temporary.GeneralLedgerTemporaryActivity
-import com.aumofinance.app.reports.trialbalances.adjusted.AdjustedTrialBalanceActivity
-import com.aumofinance.app.reports.trialbalances.postclosing.PostClosingTrialBalanceActivity
-import com.aumofinance.app.reports.trialbalances.unadjusted.TrialBalancesActivity
-import com.aumofinance.app.reports.worksheet.WorksheetActivity
-import com.aumofinance.app.ui.theme.AumoTheme
+import com.aumomobile.app.reports.financials.cashflow.CashFlowActivity
+import com.aumomobile.app.reports.financials.closingjournal.ClosingJournalActivity
+import com.aumomobile.app.reports.financials.financialposition.FinancialPositionActivity
+import com.aumomobile.app.reports.financials.incomestatement.IncomeStatementActivity
+import com.aumomobile.app.reports.financials.retainedearnings.RetainedEarningsActivity
+import com.aumomobile.app.reports.journals.AdjustingJournalReportActivity
+import com.aumomobile.app.reports.ledgers.permanent.GeneralLedgerPermanentActivity
+import com.aumomobile.app.reports.ledgers.temporary.GeneralLedgerTemporaryActivity
+import com.aumomobile.app.reports.trialbalances.adjusted.AdjustedTrialBalanceActivity
+import com.aumomobile.app.reports.trialbalances.postclosing.PostClosingTrialBalanceActivity
+import com.aumomobile.app.reports.trialbalances.unadjusted.TrialBalancesActivity
+import com.aumomobile.app.reports.worksheet.WorksheetActivity
+import com.aumomobile.app.ui.theme.AumoTheme
 
 // Contents of the "Reports" box on Home. General Journal is NOT included
 // here because it has its own dedicated box on Home (see HomeActivity).

@@ -24,13 +24,14 @@ mengembalikan token, dikirim di setiap request berikutnya lewat header
 | Lint       | ktlint (`org.jlleitschuh.gradle.ktlint`)                                                                                                                                                                                                                                                                                          |
 | CI/CD      | GitHub Actions (`.github/workflows/android-build.yml`)                                                                                                                                                                                                                                                                            |
 
-`applicationId` = `com.bnrc.aumofinance` — harus tetap sama dengan app MAUI
+`applicationId` = `com.bnrc.aumomobile` — harus tetap sama dengan app MAUI
 lama supaya Play Store menganggap rilis berikutnya sebagai update, bukan
 aplikasi baru (lihat komentar di `app/build.gradle.kts`).
 
 ## Build
 
 ```
+./gradlew compileDebugSources # cek error syntax dan kompilasi kode
 ./gradlew assembleDebug     # APK debug, tidak perlu signing
 ./gradlew assembleRelease   # APK release, unsigned
 ```
@@ -46,7 +47,7 @@ di repo.
 
 ## Struktur folder
 
-Package: `app/src/main/java/com/aumofinance/app/`
+Package: `app/src/main/java/com/aumomobile/app/`
 
 | Folder                   | Fungsi                                                                                                                                                                                                                                                                                                                                            |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

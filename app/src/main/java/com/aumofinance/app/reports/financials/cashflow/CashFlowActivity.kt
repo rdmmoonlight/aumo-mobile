@@ -1,10 +1,10 @@
-package com.aumofinance.app.reports.financials.cashflow
+package com.aumomobile.app.reports.financials.cashflow
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
-import com.aumofinance.app.ui.theme.AumoTheme
+import com.aumomobile.app.ui.theme.AumoTheme
 
 class CashFlowActivity : ComponentActivity() {
     private val viewModel: CashFlowViewModel by viewModels()

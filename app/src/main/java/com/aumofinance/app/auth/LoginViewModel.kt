@@ -1,13 +1,13 @@
-package com.aumofinance.app.auth
+package com.aumomobile.app.auth
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.aumofinance.app.network.SessionManager
-import com.aumofinance.app.network.SessionStore
-import com.aumofinance.app.network.safeBody
+import com.aumomobile.app.network.SessionManager
+import com.aumomobile.app.network.SessionStore
+import com.aumomobile.app.network.safeBody
 import io.ktor.http.isSuccess
 import kotlinx.coroutines.launch
 
@@ -54,7 +54,7 @@ class LoginViewModel : ViewModel() {
                     state = LoginState.Error(body.message.ifBlank { "Login gagal (${response.status.value})" })
                 }
             } catch (t: Throwable) {
-                com.aumofinance.app.crashlog.AppLogger.error("LoginViewModel", "Error tertangkap", t)
+                com.aumomobile.app.crashlog.AppLogger.error("LoginViewModel", "Error tertangkap", t)
                 state = LoginState.Error(t.message ?: "Koneksi gagal")
             }
         }

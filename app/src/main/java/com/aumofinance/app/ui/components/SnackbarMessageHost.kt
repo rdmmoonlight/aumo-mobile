@@ -1,4 +1,4 @@
-package com.aumofinance.app.ui.components
+package com.aumomobile.app.ui.components
 
 import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.foundation.layout.navigationBarsPadding

@@ -1,4 +1,4 @@
-package com.aumofinance.app.reports.journals
+package com.aumomobile.app.reports.journals
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -21,9 +21,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.aumofinance.app.core.CurrencyFormatter
-import com.aumofinance.app.ui.theme.AumoColors
-import com.aumofinance.app.ui.theme.AumoDimens
+import com.aumomobile.app.core.CurrencyFormatter
+import com.aumomobile.app.ui.theme.AumoColors
+import com.aumomobile.app.ui.theme.AumoDimens
 import java.text.SimpleDateFormat
 import java.util.Locale
 

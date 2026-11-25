@@ -1,4 +1,4 @@
-package com.aumofinance.app.settings
+package com.aumomobile.app.settings
 
 import android.content.Context
 import android.content.Intent
@@ -9,10 +9,10 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import com.aumofinance.app.crashlog.CrashLogActivity
-import com.aumofinance.app.logout.LogoutActivity
-import com.aumofinance.app.ui.theme.AumoTheme
-import com.aumofinance.app.update.AppUpdateService
+import com.aumomobile.app.crashlog.CrashLogActivity
+import com.aumomobile.app.logout.LogoutActivity
+import com.aumomobile.app.ui.theme.AumoTheme
+import com.aumomobile.app.update.AppUpdateService
 
 // Halaman Settings: preferensi notifikasi (disimpan lokal lewat
 // SharedPreferences — belum ada backend untuk ini, murni preferensi

@@ -1,13 +1,13 @@
-package com.aumofinance.app.reports.ledgers.permanent
+package com.aumomobile.app.reports.ledgers.permanent
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.aumofinance.app.reports.ledgers.LedgerResponse
-import com.aumofinance.app.reports.ledgers.LedgerResult
-import com.aumofinance.app.reports.ledgers.LedgersApi
+import com.aumomobile.app.reports.ledgers.LedgerResponse
+import com.aumomobile.app.reports.ledgers.LedgerResult
+import com.aumomobile.app.reports.ledgers.LedgersApi
 import kotlinx.coroutines.launch
 
 // Akun Permanent (Neraca): Assets, Liabilities, Equity.

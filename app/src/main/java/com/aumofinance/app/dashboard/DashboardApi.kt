@@ -1,6 +1,6 @@
-package com.aumofinance.app.dashboard
+package com.aumomobile.app.dashboard
 
-import com.aumofinance.app.network.ApiClient
+import com.aumomobile.app.network.ApiClient
 import io.ktor.client.HttpClient
 import io.ktor.client.request.get
 import io.ktor.client.statement.HttpResponse

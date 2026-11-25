@@ -1,4 +1,4 @@
-package com.aumofinance.app.network
+package com.aumomobile.app.network
 
 import io.ktor.client.call.body
 import io.ktor.client.statement.HttpResponse

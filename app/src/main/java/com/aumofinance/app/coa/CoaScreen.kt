@@ -1,4 +1,4 @@
-package com.aumofinance.app.coa
+package com.aumomobile.app.coa
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -36,9 +36,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.aumofinance.app.core.CurrencyFormatter
-import com.aumofinance.app.ui.theme.AumoColors
-import com.aumofinance.app.ui.theme.AumoDimens
+import com.aumomobile.app.core.CurrencyFormatter
+import com.aumomobile.app.ui.theme.AumoColors
+import com.aumomobile.app.ui.theme.AumoDimens
 
 // According to the reference number ranges in AccountClassification.cs in aumo-finance-web.
 val CoaAccountTypes =

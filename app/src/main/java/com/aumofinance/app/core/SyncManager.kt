@@ -1,4 +1,4 @@
-package com.aumofinance.app.core
+package com.aumomobile.app.core
 
 // Placeholder sinkronisasi data offline-first.
 // TODO (pekerjaan lanjutan di luar 6 fase ini): implementasi antrian retry untuk

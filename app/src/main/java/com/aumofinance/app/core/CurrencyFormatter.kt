@@ -1,4 +1,4 @@
-package com.aumofinance.app.core
+package com.aumomobile.app.core
 
 import java.text.NumberFormat
 import java.util.Locale

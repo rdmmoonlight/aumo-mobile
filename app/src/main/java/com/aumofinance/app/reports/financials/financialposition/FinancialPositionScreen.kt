@@ -1,17 +1,17 @@
-package com.aumofinance.app.reports.financials.financialposition
+package com.aumomobile.app.reports.financials.financialposition
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.aumofinance.app.reports.financials.FinancialPositionReport
-import com.aumofinance.app.reports.financials.FinancialReportScaffold
-import com.aumofinance.app.reports.financials.ReportDivider
-import com.aumofinance.app.reports.financials.ReportRow
-import com.aumofinance.app.reports.financials.ReportSectionTitle
-import com.aumofinance.app.ui.theme.AumoColors
-import com.aumofinance.app.ui.theme.AumoDimens
+import com.aumomobile.app.reports.financials.FinancialPositionReport
+import com.aumomobile.app.reports.financials.FinancialReportScaffold
+import com.aumomobile.app.reports.financials.ReportDivider
+import com.aumomobile.app.reports.financials.ReportRow
+import com.aumomobile.app.reports.financials.ReportSectionTitle
+import com.aumomobile.app.ui.theme.AumoColors
+import com.aumomobile.app.ui.theme.AumoDimens
 
 /** Statement of Financial Position (Neraca): Aset = Liabilitas + Ekuitas. */
 @Composable

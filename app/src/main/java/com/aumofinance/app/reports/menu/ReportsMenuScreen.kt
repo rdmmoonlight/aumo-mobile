@@ -1,4 +1,4 @@
-package com.aumofinance.app.reports.menu
+package com.aumomobile.app.reports.menu
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -38,8 +38,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.aumofinance.app.ui.theme.AumoColors
-import com.aumofinance.app.ui.theme.AumoDimens
+import com.aumomobile.app.ui.theme.AumoColors
+import com.aumomobile.app.ui.theme.AumoDimens
 
 data class ReportMenuItem(
     val title: String,

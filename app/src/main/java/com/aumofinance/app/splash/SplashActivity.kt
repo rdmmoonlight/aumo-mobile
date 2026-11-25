@@ -1,4 +1,4 @@
-package com.aumofinance.app.splash
+package com.aumomobile.app.splash
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,11 +6,11 @@ import android.os.Handler
 import android.os.Looper
 import androidx.activity.compose.setContent
 import androidx.fragment.app.FragmentActivity
-import com.aumofinance.app.auth.BiometricHelper
-import com.aumofinance.app.auth.LoginActivity
-import com.aumofinance.app.home.HomeActivity
-import com.aumofinance.app.network.SessionStore
-import com.aumofinance.app.update.AppUpdateService
+import com.aumomobile.app.auth.BiometricHelper
+import com.aumomobile.app.auth.LoginActivity
+import com.aumomobile.app.home.HomeActivity
+import com.aumomobile.app.network.SessionStore
+import com.aumomobile.app.update.AppUpdateService
 
 // Splash screen custom (bukan API splash minimalis Android 12+) karena
 // desainnya penuh — logo + teks atribusi "by rdmmoonlight" — bukan cuma

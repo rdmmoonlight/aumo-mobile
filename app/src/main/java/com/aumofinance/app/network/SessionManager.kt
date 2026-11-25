@@ -1,4 +1,4 @@
-package com.aumofinance.app.network
+package com.aumomobile.app.network
 
 // Status sesi di memori. Otentikasi dipegang oleh token JWT (dikembalikan
 // backend di response login, header "Authorization: Bearer <token>"

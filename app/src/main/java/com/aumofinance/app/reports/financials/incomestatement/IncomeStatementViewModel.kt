@@ -1,14 +1,14 @@
-package com.aumofinance.app.reports.financials.incomestatement
+package com.aumomobile.app.reports.financials.incomestatement
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.aumofinance.app.network.SingleFlight
-import com.aumofinance.app.network.safeBody
-import com.aumofinance.app.reports.financials.FinancialsApi
-import com.aumofinance.app.reports.financials.IncomeStatementReport
+import com.aumomobile.app.network.SingleFlight
+import com.aumomobile.app.network.safeBody
+import com.aumomobile.app.reports.financials.FinancialsApi
+import com.aumomobile.app.reports.financials.IncomeStatementReport
 
 class IncomeStatementViewModel : ViewModel() {
     private val api = FinancialsApi()
@@ -23,7 +23,7 @@ class IncomeStatementViewModel : ViewModel() {
                 try {
                     api.getIncomeStatement().safeBody<IncomeStatementReport>()
                 } catch (t: Throwable) {
-                    com.aumofinance.app.crashlog.AppLogger.error("IncomeStatementViewModel", "Error tertangkap", t)
+                    com.aumomobile.app.crashlog.AppLogger.error("IncomeStatementViewModel", "Error tertangkap", t)
                     null
                 }
         }

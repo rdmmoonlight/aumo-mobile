@@ -1,4 +1,4 @@
-package com.aumofinance.app.reports.journals
+package com.aumomobile.app.reports.journals
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,8 +7,8 @@ import androidx.activity.viewModels
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.ui.Modifier
-import com.aumofinance.app.ui.components.SnackbarMessageHost
-import com.aumofinance.app.ui.theme.AumoTheme
+import com.aumomobile.app.ui.components.SnackbarMessageHost
+import com.aumomobile.app.ui.theme.AumoTheme
 
 // Host bersama untuk General Journal dan Adjusting Journal. Seluruh tampilan
 // (JournalReportScreen), snackbar, dan state (JournalReportViewModel) dipakai

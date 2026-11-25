@@ -1,4 +1,4 @@
-package com.aumofinance.app.crashlog
+package com.aumomobile.app.crashlog
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -14,10 +14,10 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import com.aumofinance.app.ui.components.ConfirmDialog
-import com.aumofinance.app.ui.components.SnackbarMessageHost
-import com.aumofinance.app.ui.theme.AumoColors
-import com.aumofinance.app.ui.theme.AumoTheme
+import com.aumomobile.app.ui.components.ConfirmDialog
+import com.aumomobile.app.ui.components.SnackbarMessageHost
+import com.aumomobile.app.ui.theme.AumoColors
+import com.aumomobile.app.ui.theme.AumoTheme
 
 class CrashLogActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

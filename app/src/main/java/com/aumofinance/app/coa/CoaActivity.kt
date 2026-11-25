@@ -1,4 +1,4 @@
-package com.aumofinance.app.coa
+package com.aumomobile.app.coa
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -12,8 +12,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import com.aumofinance.app.ui.components.SnackbarMessageHost
-import com.aumofinance.app.ui.theme.AumoTheme
+import com.aumomobile.app.ui.components.SnackbarMessageHost
+import com.aumomobile.app.ui.theme.AumoTheme
 
 class CoaActivity : ComponentActivity() {
     private val viewModel: CoaViewModel by viewModels()

@@ -1,4 +1,4 @@
-package com.aumofinance.app.auth
+package com.aumomobile.app.auth
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -28,9 +28,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
-import com.aumofinance.app.R
-import com.aumofinance.app.ui.theme.AumoColors
-import com.aumofinance.app.ui.theme.AumoDimens
+import com.aumomobile.app.R
+import com.aumomobile.app.ui.theme.AumoColors
+import com.aumomobile.app.ui.theme.AumoDimens
 
 /** Halaman login (email, kata sandi, biometrik). */
 @Composable

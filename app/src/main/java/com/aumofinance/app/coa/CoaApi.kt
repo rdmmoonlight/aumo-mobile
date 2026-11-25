@@ -1,6 +1,6 @@
-package com.aumofinance.app.coa
+package com.aumomobile.app.coa
 
-import com.aumofinance.app.network.ApiClient
+import com.aumomobile.app.network.ApiClient
 import io.ktor.client.HttpClient
 import io.ktor.client.request.delete
 import io.ktor.client.request.get

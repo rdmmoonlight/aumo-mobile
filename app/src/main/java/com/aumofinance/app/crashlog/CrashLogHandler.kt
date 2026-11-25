@@ -1,4 +1,4 @@
-package com.aumofinance.app.crashlog
+package com.aumomobile.app.crashlog
 
 // Uncaught exception handler: mencatat stack trace lewat AppLogger (sinkron,
 // karena proses segera mati) lalu meneruskan ke handler bawaan Android.

@@ -1,10 +1,10 @@
-package com.aumofinance.app.core
+package com.aumomobile.app.core
 
 import android.app.Application
-import com.aumofinance.app.crashlog.AppLogger
-import com.aumofinance.app.crashlog.CrashLogHandler
-import com.aumofinance.app.network.SessionExpiredHandler
-import com.aumofinance.app.network.SessionStore
+import com.aumomobile.app.crashlog.AppLogger
+import com.aumomobile.app.crashlog.CrashLogHandler
+import com.aumomobile.app.network.SessionExpiredHandler
+import com.aumomobile.app.network.SessionStore
 
 // CrashLogHandler sebelumnya ada di codebase tapi TIDAK PERNAH benar-benar
 // didaftarkan sebagai default uncaught exception handler — dead code sejak

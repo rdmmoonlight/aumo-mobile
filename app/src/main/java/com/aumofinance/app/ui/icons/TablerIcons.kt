@@ -1,4 +1,4 @@
-package com.aumofinance.app.ui.icons
+package com.aumomobile.app.ui.icons
 
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.LocalContentColor
@@ -11,7 +11,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.aumofinance.app.R
+import com.aumomobile.app.R
 
 // Font ikon Tabler Icons (versi 3.46.0, family "outline"/reguler — sama
 // dengan yang dipakai di legacy-maui-reference, lihat glyph hex yang sama

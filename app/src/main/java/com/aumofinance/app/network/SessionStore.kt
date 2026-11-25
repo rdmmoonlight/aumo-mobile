@@ -1,4 +1,4 @@
-package com.aumofinance.app.network
+package com.aumomobile.app.network
 
 import android.content.Context
 import android.content.SharedPreferences

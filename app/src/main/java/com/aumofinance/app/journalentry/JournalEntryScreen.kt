@@ -1,4 +1,4 @@
-package com.aumofinance.app.journalentry
+package com.aumomobile.app.journalentry
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
@@ -47,12 +47,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
-import com.aumofinance.app.coa.Account
-import com.aumofinance.app.core.CurrencyFormatter
-import com.aumofinance.app.ui.icons.TablerIcon
-import com.aumofinance.app.ui.icons.TablerIcons
-import com.aumofinance.app.ui.theme.AumoColors
-import com.aumofinance.app.ui.theme.AumoDimens
+import com.aumomobile.app.coa.Account
+import com.aumomobile.app.core.CurrencyFormatter
+import com.aumomobile.app.ui.icons.TablerIcon
+import com.aumomobile.app.ui.icons.TablerIcons
+import com.aumomobile.app.ui.theme.AumoColors
+import com.aumomobile.app.ui.theme.AumoDimens
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale

@@ -1,4 +1,4 @@
-package com.aumofinance.app.network
+package com.aumomobile.app.network
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job

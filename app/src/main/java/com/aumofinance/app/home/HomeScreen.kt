@@ -1,4 +1,4 @@
-package com.aumofinance.app.home
+package com.aumomobile.app.home
 
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
@@ -17,10 +17,10 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.aumofinance.app.ui.icons.TablerIcon
-import com.aumofinance.app.ui.icons.TablerIcons
-import com.aumofinance.app.ui.theme.AumoColors
-import com.aumofinance.app.ui.theme.AumoDimens
+import com.aumomobile.app.ui.icons.TablerIcon
+import com.aumomobile.app.ui.icons.TablerIcons
+import com.aumomobile.app.ui.theme.AumoColors
+import com.aumomobile.app.ui.theme.AumoDimens
 import java.util.Calendar as JavaCalendar
 
 data class HomeMenuItem(

@@ -1,11 +1,11 @@
-package com.aumofinance.app.reports.financials.incomestatement
+package com.aumomobile.app.reports.financials.incomestatement
 
 import androidx.compose.runtime.Composable
-import com.aumofinance.app.reports.financials.FinancialReportScaffold
-import com.aumofinance.app.reports.financials.IncomeStatementReport
-import com.aumofinance.app.reports.financials.ReportDivider
-import com.aumofinance.app.reports.financials.ReportRow
-import com.aumofinance.app.reports.financials.ReportSectionTitle
+import com.aumomobile.app.reports.financials.FinancialReportScaffold
+import com.aumomobile.app.reports.financials.IncomeStatementReport
+import com.aumomobile.app.reports.financials.ReportDivider
+import com.aumomobile.app.reports.financials.ReportRow
+import com.aumomobile.app.reports.financials.ReportSectionTitle
 
 /**
  * Bagian "Other Income & Expenses" hanya ditampilkan jika berisi data

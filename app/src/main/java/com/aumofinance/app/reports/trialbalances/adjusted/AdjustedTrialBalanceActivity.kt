@@ -1,11 +1,11 @@
-package com.aumofinance.app.reports.trialbalances.adjusted
+package com.aumomobile.app.reports.trialbalances.adjusted
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
-import com.aumofinance.app.reports.trialbalances.TrialBalancesScreen
-import com.aumofinance.app.ui.theme.AumoTheme
+import com.aumomobile.app.reports.trialbalances.TrialBalancesScreen
+import com.aumomobile.app.ui.theme.AumoTheme
 
 class AdjustedTrialBalanceActivity : ComponentActivity() {
     private val viewModel: AdjustedTrialBalanceViewModel by viewModels()

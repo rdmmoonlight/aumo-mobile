@@ -1,4 +1,4 @@
-package com.aumofinance.app.data
+package com.aumomobile.app.data
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

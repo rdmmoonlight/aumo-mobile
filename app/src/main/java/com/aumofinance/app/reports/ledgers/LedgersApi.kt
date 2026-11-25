@@ -1,6 +1,6 @@
-package com.aumofinance.app.reports.ledgers
+package com.aumomobile.app.reports.ledgers
 
-import com.aumofinance.app.network.ApiClient
+import com.aumomobile.app.network.ApiClient
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.request.get
@@ -69,7 +69,7 @@ class LedgersApi(private val client: HttpClient = ApiClient.client) {
                 else -> LedgerResult.Success(body)
             }
         } catch (t: Throwable) {
-            com.aumofinance.app.crashlog.AppLogger.error("LedgersApi", "Error tertangkap", t)
+            com.aumomobile.app.crashlog.AppLogger.error("LedgersApi", "Error tertangkap", t)
             LedgerResult.Failure("Tidak dapat terhubung ke server.")
         }
 }

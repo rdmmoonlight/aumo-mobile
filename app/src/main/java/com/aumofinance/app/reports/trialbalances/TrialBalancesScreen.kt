@@ -1,4 +1,4 @@
-package com.aumofinance.app.reports.trialbalances
+package com.aumomobile.app.reports.trialbalances
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -14,10 +14,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.aumofinance.app.core.CurrencyFormatter
-import com.aumofinance.app.reports.financials.ReportInfoNote
-import com.aumofinance.app.ui.theme.AumoColors
-import com.aumofinance.app.ui.theme.AumoDimens
+import com.aumomobile.app.core.CurrencyFormatter
+import com.aumomobile.app.reports.financials.ReportInfoNote
+import com.aumomobile.app.ui.theme.AumoColors
+import com.aumomobile.app.ui.theme.AumoDimens
 
 // Tabel Neraca Saldo. Dipakai bareng oleh 3 varian: Unadjusted, Adjusted, Post-Closing (beda cuma
 // parameter "type" saat load() di masing-masing ViewModel).

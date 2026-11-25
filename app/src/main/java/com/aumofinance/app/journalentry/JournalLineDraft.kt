@@ -1,4 +1,4 @@
-package com.aumofinance.app.journalentry
+package com.aumomobile.app.journalentry
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

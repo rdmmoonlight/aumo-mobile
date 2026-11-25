@@ -1,4 +1,4 @@
-package com.aumofinance.app.ui.components
+package com.aumomobile.app.ui.components
 
 import androidx.compose.material3.DatePicker
 import androidx.compose.material3.DatePickerDialog
@@ -8,7 +8,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.material3.rememberDatePickerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
-import com.aumofinance.app.ui.theme.AumoColors
+import com.aumomobile.app.ui.theme.AumoColors
 import java.util.Calendar
 import java.util.TimeZone
 

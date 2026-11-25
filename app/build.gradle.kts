@@ -8,15 +8,15 @@ android {
     // namespace = paket Kotlin (R class, dst.) — BEBAS beda dari applicationId
     // sejak AGP 7+ memisahkan keduanya, jadi tidak perlu rename seluruh
     // struktur package Kotlin yang sudah ditulis.
-    namespace = "com.aumofinance.app"
+    namespace = "com.aumomobile.app"
     compileSdk = 34
 
     defaultConfig {
-        // HARUS "com.bnrc.aumofinance" — ini applicationId asli app MAUI lama
+        // HARUS "com.bnrc.aumomobile" — ini applicationId asli app MAUI lama
         // (lihat frontend/legacy-maui-reference/AumoFinance.csproj). Kalau beda,
         // Play Store akan menganggap ini aplikasi baru yang terpisah, bukan
         // update dari app existing, dan user lama kehilangan kontinuitas rilis.
-        applicationId = "com.bnrc.aumofinance"
+        applicationId = "com.bnrc.aumomobile"
         // Locked per project requirement: minSdk must stay at Android 9 (API 28) or below
         minSdk = 28
         targetSdk = 34
@@ -36,7 +36,7 @@ android {
             // debug sama persis dengan release, install APK debug di HP yang
             // sudah ada app release akan ditolak Android ("package conflicts
             // with an existing package"). applicationIdSuffix membuat debug
-            // punya package ID sendiri (com.bnrc.aumofinance.debug) supaya
+            // punya package ID sendiri (com.bnrc.aumomobile.debug) supaya
             // keduanya bisa terpasang berdampingan tanpa bentrok.
             applicationIdSuffix = ".debug"
             versionNameSuffix = "-debug"
@@ -102,7 +102,7 @@ dependencies {
     implementation("androidx.compose.material3:material3")
     // Dipakai untuk ikon outline Material di halaman Reports menu
     // (ReportsMenuScreen.kt); layar lain memakai TablerIcon (font glyph,
-    // lihat com.aumofinance.app.ui.icons.TablerIcons).
+    // lihat com.aumomobile.app.ui.icons.TablerIcons).
     implementation("androidx.compose.material:material-icons-extended")
     implementation("androidx.activity:activity-compose:1.9.1")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.4")

@@ -1,4 +1,4 @@
-package com.aumofinance.app.splash
+package com.aumomobile.app.splash
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -9,7 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import com.aumofinance.app.R
+import com.aumomobile.app.R
 
 /**
  * Splash penuh (logo + atribusi) — bukan API splash minimalis Android 12+,

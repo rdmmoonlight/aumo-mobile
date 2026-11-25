@@ -1,4 +1,4 @@
-package com.aumofinance.app.periods
+package com.aumomobile.app.periods
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,9 +11,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import com.aumofinance.app.ui.components.ConfirmDialog
-import com.aumofinance.app.ui.components.SnackbarMessageHost
-import com.aumofinance.app.ui.theme.AumoTheme
+import com.aumomobile.app.ui.components.ConfirmDialog
+import com.aumomobile.app.ui.components.SnackbarMessageHost
+import com.aumomobile.app.ui.theme.AumoTheme
 
 // Host Compose tipis — tampilan ada di PeriodsScreen.kt (termasuk
 // OpenPeriodDialog), state ada di PeriodsViewModel.

@@ -1,4 +1,4 @@
-package com.aumofinance.app.home
+package com.aumomobile.app.home
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,16 +10,16 @@ import androidx.compose.runtime.getValue
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.lifecycleScope
-import com.aumofinance.app.coa.CoaActivity
-import com.aumofinance.app.dashboard.DashboardActivity
-import com.aumofinance.app.data.DbConnectionManager
-import com.aumofinance.app.journalentry.JournalEntryActivity
-import com.aumofinance.app.network.ApiClient
-import com.aumofinance.app.periods.PeriodsActivity
-import com.aumofinance.app.reports.journals.GeneralJournalReportActivity
-import com.aumofinance.app.reports.menu.ReportsMenuActivity
-import com.aumofinance.app.settings.SettingsActivity
-import com.aumofinance.app.ui.theme.AumoTheme
+import com.aumomobile.app.coa.CoaActivity
+import com.aumomobile.app.dashboard.DashboardActivity
+import com.aumomobile.app.data.DbConnectionManager
+import com.aumomobile.app.journalentry.JournalEntryActivity
+import com.aumomobile.app.network.ApiClient
+import com.aumomobile.app.periods.PeriodsActivity
+import com.aumomobile.app.reports.journals.GeneralJournalReportActivity
+import com.aumomobile.app.reports.menu.ReportsMenuActivity
+import com.aumomobile.app.settings.SettingsActivity
+import com.aumomobile.app.ui.theme.AumoTheme
 import io.ktor.client.request.get
 import io.ktor.http.isSuccess
 import kotlinx.coroutines.launch

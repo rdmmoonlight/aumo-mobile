@@ -1,14 +1,14 @@
-package com.aumofinance.app.periods
+package com.aumomobile.app.periods
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.aumofinance.app.crashlog.AppLogger
-import com.aumofinance.app.data.DbConnectionManager
-import com.aumofinance.app.network.SingleFlight
-import com.aumofinance.app.network.safeBody
+import com.aumomobile.app.crashlog.AppLogger
+import com.aumomobile.app.data.DbConnectionManager
+import com.aumomobile.app.network.SingleFlight
+import com.aumomobile.app.network.safeBody
 import com.google.gson.JsonObject
 import com.google.gson.JsonParser
 import io.ktor.client.statement.HttpResponse

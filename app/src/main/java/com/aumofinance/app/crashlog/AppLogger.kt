@@ -1,4 +1,4 @@
-package com.aumofinance.app.crashlog
+package com.aumomobile.app.crashlog
 
 import android.content.Context
 import android.util.Log

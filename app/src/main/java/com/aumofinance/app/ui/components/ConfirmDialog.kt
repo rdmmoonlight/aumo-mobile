@@ -1,4 +1,4 @@
-package com.aumofinance.app.ui.components
+package com.aumomobile.app.ui.components
 
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Text
@@ -6,7 +6,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
-import com.aumofinance.app.ui.theme.AumoColors
+import com.aumomobile.app.ui.theme.AumoColors
 
 // Dialog konfirmasi dua tombol untuk aksi yang tidak bisa dibatalkan
 // (mis. hapus entri, tutup periode).

@@ -1,4 +1,4 @@
-package com.aumofinance.app.auth
+package com.aumomobile.app.auth
 
 import androidx.biometric.BiometricManager
 import androidx.biometric.BiometricPrompt

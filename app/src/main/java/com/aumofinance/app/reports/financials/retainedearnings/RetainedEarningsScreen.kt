@@ -1,10 +1,10 @@
-package com.aumofinance.app.reports.financials.retainedearnings
+package com.aumomobile.app.reports.financials.retainedearnings
 
 import androidx.compose.runtime.Composable
-import com.aumofinance.app.reports.financials.FinancialReportScaffold
-import com.aumofinance.app.reports.financials.ReportDivider
-import com.aumofinance.app.reports.financials.ReportRow
-import com.aumofinance.app.reports.financials.RetainedEarningsReport
+import com.aumomobile.app.reports.financials.FinancialReportScaffold
+import com.aumomobile.app.reports.financials.ReportDivider
+import com.aumomobile.app.reports.financials.ReportRow
+import com.aumomobile.app.reports.financials.RetainedEarningsReport
 
 /** Laporan Perubahan Modal (Retained Earnings). */
 @Composable

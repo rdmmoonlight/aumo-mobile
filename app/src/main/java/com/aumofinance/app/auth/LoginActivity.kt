@@ -1,4 +1,4 @@
-package com.aumofinance.app.auth
+package com.aumomobile.app.auth
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,10 +10,10 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.fragment.app.FragmentActivity
-import com.aumofinance.app.home.HomeActivity
-import com.aumofinance.app.network.SessionExpiredHandler
-import com.aumofinance.app.network.SessionStore
-import com.aumofinance.app.ui.theme.AumoTheme
+import com.aumomobile.app.home.HomeActivity
+import com.aumomobile.app.network.SessionExpiredHandler
+import com.aumomobile.app.network.SessionStore
+import com.aumomobile.app.ui.theme.AumoTheme
 
 class LoginActivity : FragmentActivity() {
     private val viewModel: LoginViewModel by viewModels()

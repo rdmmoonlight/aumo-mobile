@@ -1,14 +1,14 @@
-package com.aumofinance.app.reports.trialbalances.adjusted
+package com.aumomobile.app.reports.trialbalances.adjusted
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.aumofinance.app.network.SingleFlight
-import com.aumofinance.app.network.safeBody
-import com.aumofinance.app.reports.trialbalances.TrialBalancesApi
-import com.aumofinance.app.reports.trialbalances.TrialBalancesReport
+import com.aumomobile.app.network.SingleFlight
+import com.aumomobile.app.network.safeBody
+import com.aumomobile.app.reports.trialbalances.TrialBalancesApi
+import com.aumomobile.app.reports.trialbalances.TrialBalancesReport
 
 // Neraca Saldo Disesuaikan: type="adjusted", jurnal General + Adjusting.
 class AdjustedTrialBalanceViewModel : ViewModel() {
@@ -24,7 +24,7 @@ class AdjustedTrialBalanceViewModel : ViewModel() {
                 try {
                     api.getTrialBalances("adjusted").safeBody<TrialBalancesReport>()
                 } catch (t: Throwable) {
-                    com.aumofinance.app.crashlog.AppLogger.error("AdjustedTrialBalanceViewModel", "Error tertangkap", t)
+                    com.aumomobile.app.crashlog.AppLogger.error("AdjustedTrialBalanceViewModel", "Error tertangkap", t)
                     null
                 }
         }

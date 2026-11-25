@@ -1,4 +1,4 @@
-package com.aumofinance.app.reports.financials
+package com.aumomobile.app.reports.financials
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -18,9 +18,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.aumofinance.app.core.CurrencyFormatter
-import com.aumofinance.app.ui.theme.AumoColors
-import com.aumofinance.app.ui.theme.AumoDimens
+import com.aumomobile.app.core.CurrencyFormatter
+import com.aumomobile.app.ui.theme.AumoColors
+import com.aumomobile.app.ui.theme.AumoDimens
 
 // Dipakai bersama oleh Income Statement, Retained Earnings, Financial
 // Position, Cash Flow, Closing Journal. Satu baris "label (kiri) — nominal (kanan)",

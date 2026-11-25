@@ -1,4 +1,4 @@
-package com.aumofinance.app.update
+package com.aumomobile.app.update
 
 import android.app.DownloadManager
 import android.content.BroadcastReceiver
@@ -10,8 +10,8 @@ import android.os.Environment
 import android.provider.Settings
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
-import com.aumofinance.app.BuildConfig
-import com.aumofinance.app.crashlog.AppLogger
+import com.aumomobile.app.BuildConfig
+import com.aumomobile.app.crashlog.AppLogger
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import org.json.JSONObject

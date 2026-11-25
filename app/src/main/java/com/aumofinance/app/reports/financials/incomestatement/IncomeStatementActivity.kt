@@ -1,10 +1,10 @@
-package com.aumofinance.app.reports.financials.incomestatement
+package com.aumomobile.app.reports.financials.incomestatement
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
-import com.aumofinance.app.ui.theme.AumoTheme
+import com.aumomobile.app.ui.theme.AumoTheme
 
 class IncomeStatementActivity : ComponentActivity() {
     private val viewModel: IncomeStatementViewModel by viewModels()

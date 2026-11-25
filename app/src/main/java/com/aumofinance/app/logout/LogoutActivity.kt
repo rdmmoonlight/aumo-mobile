@@ -1,4 +1,4 @@
-package com.aumofinance.app.logout
+package com.aumomobile.app.logout
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,12 +9,12 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.aumofinance.app.auth.AuthApi
-import com.aumofinance.app.auth.LoginActivity
-import com.aumofinance.app.network.SessionManager
-import com.aumofinance.app.network.SessionStore
-import com.aumofinance.app.ui.theme.AumoColors
-import com.aumofinance.app.ui.theme.AumoTheme
+import com.aumomobile.app.auth.AuthApi
+import com.aumomobile.app.auth.LoginActivity
+import com.aumomobile.app.network.SessionManager
+import com.aumomobile.app.network.SessionStore
+import com.aumomobile.app.ui.theme.AumoColors
+import com.aumomobile.app.ui.theme.AumoTheme
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

@@ -1,4 +1,4 @@
-package com.aumofinance.app.reports.journals
+package com.aumomobile.app.reports.journals
 
 // General Journal: tampilan & host dipakai bersama lewat
 // BaseJournalReportActivity; hanya endpoint yang berbeda.

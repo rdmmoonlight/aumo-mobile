@@ -1,6 +1,6 @@
-package com.aumofinance.app.network
+package com.aumomobile.app.network
 
-import com.aumofinance.app.crashlog.AppLogger
+import com.aumomobile.app.crashlog.AppLogger
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.okhttp.OkHttp
 import io.ktor.client.plugins.HttpSend

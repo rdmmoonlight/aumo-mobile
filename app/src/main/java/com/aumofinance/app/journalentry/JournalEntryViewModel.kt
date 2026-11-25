@@ -1,4 +1,4 @@
-package com.aumofinance.app.journalentry
+package com.aumomobile.app.journalentry
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
@@ -6,10 +6,10 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.aumofinance.app.coa.Account
-import com.aumofinance.app.coa.AccountsResponse
-import com.aumofinance.app.coa.CoaApi
-import com.aumofinance.app.network.safeBody
+import com.aumomobile.app.coa.Account
+import com.aumomobile.app.coa.AccountsResponse
+import com.aumomobile.app.coa.CoaApi
+import com.aumomobile.app.network.safeBody
 import io.ktor.http.isSuccess
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
@@ -108,7 +108,7 @@ class JournalEntryViewModel : ViewModel() {
             try {
                 accounts = coaApi.list().safeBody<AccountsResponse>().accounts.orEmpty().filter { it.isActive }
             } catch (t: Throwable) {
-                com.aumofinance.app.crashlog.AppLogger.error("JournalEntryViewModel", "Error tertangkap", t)
+                com.aumomobile.app.crashlog.AppLogger.error("JournalEntryViewModel", "Error tertangkap", t)
                 // kegagalan diabaikan (tidak ada pesan ke pengguna)
             }
         }
@@ -121,7 +121,7 @@ class JournalEntryViewModel : ViewModel() {
                 val body = api.nextTransactionNumber(_journalType, entryDateIso).safeBody<NextTransactionNumberResponse>()
                 transactionNumber = body.transactionNumber
             } catch (t: Throwable) {
-                com.aumofinance.app.crashlog.AppLogger.error("JournalEntryViewModel", "Error tertangkap", t)
+                com.aumomobile.app.crashlog.AppLogger.error("JournalEntryViewModel", "Error tertangkap", t)
                 // kegagalan diabaikan (tidak ada pesan ke pengguna)
             }
         }
@@ -132,7 +132,7 @@ class JournalEntryViewModel : ViewModel() {
             try {
                 api.getById(id).safeBody<JournalEntryDetailResponse>().entry?.let { bindExistingEntry(it) }
             } catch (t: Throwable) {
-                com.aumofinance.app.crashlog.AppLogger.error("JournalEntryViewModel", "Error tertangkap", t)
+                com.aumomobile.app.crashlog.AppLogger.error("JournalEntryViewModel", "Error tertangkap", t)
                 // kegagalan diabaikan (tidak ada pesan ke pengguna)
             }
         }
@@ -192,7 +192,7 @@ class JournalEntryViewModel : ViewModel() {
                     errorMessage = body.message.ifBlank { "Gagal menyimpan entri (${response.status.value})" }
                 }
             } catch (t: Throwable) {
-                com.aumofinance.app.crashlog.AppLogger.error("JournalEntryViewModel", "Error tertangkap", t)
+                com.aumomobile.app.crashlog.AppLogger.error("JournalEntryViewModel", "Error tertangkap", t)
                 errorMessage = t.message ?: "Koneksi gagal"
             }
         }
@@ -212,7 +212,7 @@ class JournalEntryViewModel : ViewModel() {
                     errorMessage = body.message.ifBlank { "Gagal memperbarui entri (${response.status.value})" }
                 }
             } catch (t: Throwable) {
-                com.aumofinance.app.crashlog.AppLogger.error("JournalEntryViewModel", "Error tertangkap", t)
+                com.aumomobile.app.crashlog.AppLogger.error("JournalEntryViewModel", "Error tertangkap", t)
                 errorMessage = t.message ?: "Koneksi gagal"
             }
         }

@@ -1,12 +1,12 @@
-package com.aumofinance.app.coa
+package com.aumomobile.app.coa
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.aumofinance.app.network.SingleFlight
-import com.aumofinance.app.network.safeBody
+import com.aumomobile.app.network.SingleFlight
+import com.aumomobile.app.network.safeBody
 import io.ktor.client.statement.HttpResponse
 import io.ktor.http.isSuccess
 import kotlinx.coroutines.CancellationException
@@ -36,7 +36,7 @@ class CoaViewModel : ViewModel() {
                 } catch (c: CancellationException) {
                     throw c
                 } catch (t: Throwable) {
-                    com.aumofinance.app.crashlog.AppLogger.error("CoaViewModel", "Error tertangkap", t)
+                    com.aumomobile.app.crashlog.AppLogger.error("CoaViewModel", "Error tertangkap", t)
                     emptyList()
                 }
         }
@@ -73,7 +73,7 @@ class CoaViewModel : ViewModel() {
                 errorMessage = body.message.ifBlank { "Gagal memproses permintaan (${response.status.value})" }
             }
         } catch (t: Throwable) {
-            com.aumofinance.app.crashlog.AppLogger.error("CoaViewModel", "Error tertangkap", t)
+            com.aumomobile.app.crashlog.AppLogger.error("CoaViewModel", "Error tertangkap", t)
             errorMessage = t.message ?: "Koneksi gagal"
         }
     }
