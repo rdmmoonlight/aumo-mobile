@@ -13,8 +13,8 @@ import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.ensureActive
 
 // State Compose (mutableStateOf), bukan LiveData (lihat
-// JournalReportScreen.kt). Satu ViewModel dipakai baik oleh General maupun
-// Adjusting Journal — loadGeneral()/loadAdjusting() beda endpoint.
+// JournalReportScreen.kt). Satu ViewModel dipakai oleh General, Adjusting, dan
+// Reversing Journal — loadGeneral()/loadAdjusting()/loadReversing() beda endpoint.
 class JournalReportViewModel : ViewModel() {
     private val reportApi = JournalReportApi()
     private val flight = SingleFlight()
@@ -32,6 +32,10 @@ class JournalReportViewModel : ViewModel() {
 
     fun loadAdjusting() {
         fetch { reportApi.getAdjustingJournal() }
+    }
+
+    fun loadReversing() {
+        fetch { reportApi.getReversingJournal() }
     }
 
     private fun fetch(call: suspend () -> HttpResponse) {
