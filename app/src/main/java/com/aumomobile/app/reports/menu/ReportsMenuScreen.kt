@@ -166,4 +166,5 @@ object ReportMenuIcons {
     val FinancialPosition = Icons.Outlined.PieChart
     val CashFlow = Icons.Outlined.Payments
     val ClosingJournal = Icons.AutoMirrored.Outlined.ReceiptLong
+    val ReversingJournal = Icons.AutoMirrored.Outlined.MenuBook
 }
