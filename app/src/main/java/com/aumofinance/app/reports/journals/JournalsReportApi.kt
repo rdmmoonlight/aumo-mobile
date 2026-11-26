@@ -50,4 +50,13 @@ class JournalReportApi(private val client: HttpClient = ApiClient.client) {
     // Adjusting Journal: sama seperti di atas tapi backend sudah memfilter
     // journalType == "Adjusting" saja.
     suspend fun getAdjustingJournal(): HttpResponse = client.get("/api/v1/reports/journals/adjusting")
+
+    // Reversing Journal (Jurnal Pembalik): memakai bentuk respons yang sama
+    // dengan General/Adjusting. Endpoint di bawah masih PLACEHOLDER — menunggu
+    // instruksi lebih lanjut mengenai endpoint backend yang tersedia.
+    suspend fun getReversingJournal(): HttpResponse = client.get(REVERSING_JOURNAL_ENDPOINT)
+
+    private companion object {
+        const val REVERSING_JOURNAL_ENDPOINT = "/api/v1/reports/journals/reversing"
+    }
 }
