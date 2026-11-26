@@ -66,6 +66,9 @@
             android:name=".reports.trialbalances.postclosing.PostClosingTrialBalanceActivity"
             android:exported="false" />
         <activity
+            android:name=".reports.journals.ReversingJournalReportActivity"
+            android:exported="false" />
+        <activity
             android:name=".reports.worksheet.WorksheetActivity"
             android:exported="false" />
         <activity
