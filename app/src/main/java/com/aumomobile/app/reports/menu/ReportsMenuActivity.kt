@@ -10,6 +10,7 @@ import com.aumomobile.app.reports.financials.financialposition.FinancialPosition
 import com.aumomobile.app.reports.financials.incomestatement.IncomeStatementActivity
 import com.aumomobile.app.reports.financials.retainedearnings.RetainedEarningsActivity
 import com.aumomobile.app.reports.journals.AdjustingJournalReportActivity
+import com.aumomobile.app.reports.journals.ReversingJournalReportActivity
 import com.aumomobile.app.reports.ledgers.permanent.GeneralLedgerPermanentActivity
 import com.aumomobile.app.reports.ledgers.temporary.GeneralLedgerTemporaryActivity
 import com.aumomobile.app.reports.trialbalances.adjusted.AdjustedTrialBalanceActivity
@@ -99,6 +100,9 @@ class ReportsMenuActivity : ComponentActivity() {
                         },
                         ReportMenuItem("Post-Closing Trial Balance", ReportMenuIcons.TrialBalances) {
                             open(PostClosingTrialBalanceActivity::class.java)
+                        },
+                        ReportMenuItem("Reversing Journal", ReportMenuIcons.ReversingJournal) {
+                            open(ReversingJournalReportActivity::class.java)
                         },
                     ),
             ),
