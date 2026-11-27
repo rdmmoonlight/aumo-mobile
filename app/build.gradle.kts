@@ -12,11 +12,11 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        // HARUS "com.b&rc.aumomobile" — ini applicationId asli app MAUI lama
+        // HARUS "com.bnrc.aumomobile" — ini applicationId asli app MAUI lama
         // (lihat frontend/legacy-maui-reference/AumoFinance.csproj). Kalau beda,
         // Play Store akan menganggap ini aplikasi baru yang terpisah, bukan
         // update dari app existing, dan user lama kehilangan kontinuitas rilis.
-        applicationId = "com.b&rc.aumomobile"
+        applicationId = "com.bnrc.aumomobile"
         // Locked per project requirement: minSdk must stay at Android 9 (API 28) or below
         minSdk = 28
         targetSdk = 34
@@ -36,7 +36,7 @@ android {
             // debug sama persis dengan release, install APK debug di HP yang
             // sudah ada app release akan ditolak Android ("package conflicts
             // with an existing package"). applicationIdSuffix membuat debug
-            // punya package ID sendiri (com.b&rc.aumomobile.debug) supaya
+            // punya package ID sendiri (com.bnrc.aumomobile.debug) supaya
             // keduanya bisa terpasang berdampingan tanpa bentrok.
             applicationIdSuffix = ".debug"
             versionNameSuffix = "-debug"

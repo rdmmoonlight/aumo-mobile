@@ -24,7 +24,7 @@ mengembalikan token, dikirim di setiap request berikutnya lewat header
 | Lint       | ktlint (`org.jlleitschuh.gradle.ktlint`)                                                                                                                                                                                                                                                                                          |
 | CI/CD      | GitHub Actions (`.github/workflows/android-build.yml`)                                                                                                                                                                                                                                                                            |
 
-`applicationId` = `com.b&rc.aumomobile` — harus tetap sama dengan app MAUI
+`applicationId` = `com.bnrc.aumomobile` — harus tetap sama dengan app MAUI
 lama supaya Play Store menganggap rilis berikutnya sebagai update, bukan
 aplikasi baru (lihat komentar di `app/build.gradle.kts`).
 
